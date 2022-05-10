@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import { AddProductToWishlistProps } from './AddProductToWishlist';
 // import { AddProductToWishlist } from './AddProductToWishlist';
 
+// lazy loading
 const AddProductToWishlist = dynamic<AddProductToWishlistProps>(
   () => {
     return import('./AddProductToWishlist').then(
